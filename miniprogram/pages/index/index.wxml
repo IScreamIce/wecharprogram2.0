@@ -1,0 +1,16 @@
+<view>
+  <text bindtap='showtext'>get init date: {{inittext}}</text>
+  <text>\n\n{{statei}}</text>
+  <text>\n\n{{stateo}}</text>
+  <text wx:for="{{stateo}}" wx:key="item" wx:if="{{state}}">
+    {{item}}
+  </text>
+
+  <template name="mode">
+    <view>123</view>
+    <view>{{inittext}}</view>
+    <view>{{name}}\t\t\t{{sex}}</view>
+  </template>
+
+  <template is="mode" data="{{inittext,...pepo}}"></template>
+</view>
